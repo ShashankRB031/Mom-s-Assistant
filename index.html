@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mom's Assistant - Recipe App</title>
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!--  font-awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">Mom's Assistant</a>
+      <div class="nav-links">
+        <a href="#recipes">Recipes</a>
+        <a href="#favorites">Favorites</a>
+      </div>
+    </div>
+    <input type="text" id="searchBar" placeholder="Search for recipes...">
+  </header>
+
+  <main>
+    <section id="home"> 
+      <div class="category-buttons">
+        <button class="category-btn" data-category="south-indian">South Indian</button>
+        <button class="category-btn" data-category="north-indian">North Indian</button>
+        <button class="category-btn" data-category="chinese">Chinese</button>
+        <button class="category-btn" data-category="italian">Italian</button>
+        <button class="category-btn" data-category="mexican">Mexican</button>
+      </div>
+    </section>
+
+    <section id="recipes">
+      <h2>Recipes</h2>
+      <div id="recipeList"></div>
+    </section>
+
+    <section id="favorites">
+      <h2>Favorites</h2>
+      <div id="favoriteList"></div>
+    </section>
+  </main>
+
+  <!-- Recipe Details Modal -->
+  <div id="recipeModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn">&times;</button>
+      <h2 id="modalRecipeName"></h2>
+      <div id="modalIngredients"></div>
+      <div id="modalInstructions"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
