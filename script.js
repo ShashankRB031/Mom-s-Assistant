@@ -660,7 +660,7 @@ const recipes = [
     id: 41,
     name: "Lasagna",
     category: "italian",
-    image: "./Images/lasagna.avif",
+    image: "/Images/lasagna.avif",
     ingredients: ["Pasta Sheets", "Meat Sauce", "Bechamel", "Cheese"],
     preparation_time: "30 minutes",
     cooking_time: "45 minutes",
